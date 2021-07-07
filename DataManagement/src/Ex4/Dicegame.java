@@ -22,9 +22,9 @@ public class Dicegame {
      System.out.println("合計値:" + sum);
 
      if(sum > 7) {
-    	 System.out.println(name + "won");
+    	 System.out.println(name + "が勝ちました!");
     } else {
-    	 System.out.println(name + "lost");
+    	 System.out.println(name + "が負けました!");
         }
 	}
 }
