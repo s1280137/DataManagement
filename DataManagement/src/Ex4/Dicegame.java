@@ -15,6 +15,11 @@ public class Dicegame {
      System.out.println("サイコロ1：" + randomValue1);
      System.out.println("サイコロ2：" + randomValue2);
      System.out.println("合計値:" + sum);
-	}
 
+     if(sum > 7) {
+    	 System.out.println("You won");
+    } else {
+    	 System.out.println("You lost");
+        }
+	}
 }
