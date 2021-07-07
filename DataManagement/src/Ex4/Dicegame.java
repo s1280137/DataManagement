@@ -1,6 +1,7 @@
 package Ex4;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Dicegame {
 
@@ -11,15 +12,19 @@ public class Dicegame {
      int randomValue2 = random.nextInt(6);
      int sum = randomValue1 + randomValue2;
 
+     System.out.println("あなたの名前は何ですか？");
+     Scanner scan = new Scanner(System.in);
+ 	String name = scan.nextLine();
+     System.out.println("こんにちは、" + name + "!");
      System.out.println("サイコロを振ると...");
      System.out.println("サイコロ1：" + randomValue1);
      System.out.println("サイコロ2：" + randomValue2);
      System.out.println("合計値:" + sum);
 
      if(sum > 7) {
-    	 System.out.println("You won");
+    	 System.out.println(name + "won");
     } else {
-    	 System.out.println("You lost");
+    	 System.out.println(name + "lost");
         }
 	}
 }
